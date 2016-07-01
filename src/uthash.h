@@ -263,7 +263,7 @@ do {                                                                            
       if(cmpfcn(DECLTYPE(head) ELMT_FROM_HH((head)->hh.tbl, _hs_iter), add) > 0) \
         break;                                                                   \
     } while((_hs_iter = _hs_iter->next));                                        \
-    if(_hs_iter) {                                                               \
+    if (_hs_iter) {                                                              \
       (add)->hh.next = _hs_iter;                                                 \
       if(((add)->hh.prev = _hs_iter->prev))                                      \
         HH_FROM_ELMT((head)->hh.tbl, _hs_iter->prev)->next = add;                \
